@@ -245,7 +245,7 @@ var vies_confirmacao_real_13 = [
 		description: 'A mensagem acima é verdadeira ou falsa?',
 		options: 'list',
 		list: ['Verdadeira','Falsa'],
-		image: 'images/Real - eficacia pfizer 94%.JPG',	  
+		image: 'images/Real - eficacia pfizer 94.JPG',	  
 		category: 'Verdadeira'
 	},
 	{
