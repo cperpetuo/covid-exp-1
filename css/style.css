@@ -32,6 +32,10 @@
   }
 
   .intro { 
+	background-image: url('../images/feausp.png');
+    background-repeat: no-repeat;
+    background-position: 30px 25px;
+
 	margin: 20px auto; 
 	width: 700px; 
 	border: 1px solid gray;
