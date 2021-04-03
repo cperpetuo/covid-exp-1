@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pesquisa sobre Covid-19</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="questions.js"></script>
+<script src="js/database.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+  
+<body>
+  <div id="content" class="content">
+   
+    <h1>Instruções</h1>
+    <div  class="question">
+		No experimento a seguir, você irá ler algumas notícias sobre a vacinação que circularam na mídia social. Você pode passar por elas de acordo com seu próprio ritmo. 
+		<p>Clique em Próximo para continuar.</p>
+	</div>
+  </div>
+
+<p style="text-align: center;"><a class="button" id='next' href="index1.html">Próximo</a></p>
+
+  <script>
+
+    $('document').ready(function() {
+
+      // Seta o codigo do respondente
+      var url = new URL(window.location.href);
+      var code = url.searchParams.get("code");
+      if(code != null) {
+        href = $('#next').attr('href');
+		$('#next').attr('href', href + "?code=" + code);
+      }
+    });
+  </script>
+
+</body>
+</html>

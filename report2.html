@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pesquisa sobre Covid-19</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="questions.js"></script>
+<script src="js/database.js"></script>
+<script src="js/report2.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+  
+<body>
+  <div id="content" class="content">
+    
+    <h1>Relatório</h1>
+	
+	
+	<table id="table">
+	</table>
+	
+	  
+  </div>
+
+  <div id="success" class="content" style="display: none;">
+    <p>Obrigado por colaborar com a pesquisa. Anote o código abaixo para resgatar o seu prêmio.</p>
+    <p id="codigo"></p>
+    <p>Siga para a <a id='next' href="index16.html?code=">próxima etapa</a></p>
+  </div>
+
+  <div class="center"></div>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+  <script>
+
+    $('document').ready(function() {
+
+      // Your web app's Firebase configuration
+      firebaseConfiguration();
+
+      // Seta o codigo do respondente
+      var url = new URL(window.location.href);
+      var code = url.searchParams.get("code");
+      if(code != null) {
+        $('#code').val(code);
+      }
+      
+      // List users 
+	  evaluateAnswers('vies_confirmacao_fake_1', 'table', vies_confirmacao_fake_1);
+	  evaluateAnswers('vies_confirmacao_fake_2', 'table', vies_confirmacao_fake_2);
+	  evaluateAnswers('vies_confirmacao_fake_3', 'table', vies_confirmacao_fake_3);
+	  evaluateAnswers('vies_confirmacao_fake_4', 'table', vies_confirmacao_fake_4);
+	  evaluateAnswers('vies_confirmacao_fake_5', 'table', vies_confirmacao_fake_5);
+	  evaluateAnswers('vies_confirmacao_6', 'table', vies_confirmacao_6);
+	  evaluateAnswers('vies_confirmacao_7', 'table', vies_confirmacao_7);
+	  evaluateAnswers('vies_confirmacao_8', 'table', vies_confirmacao_8);
+	  evaluateAnswers('vies_confirmacao_9', 'table', vies_confirmacao_9);
+	  evaluateAnswers('vies_confirmacao_10', 'table', vies_confirmacao_10);
+	  evaluateAnswers('vies_confirmacao_real_11', 'table', vies_confirmacao_real_11);
+	  evaluateAnswers('vies_confirmacao_real_12', 'table', vies_confirmacao_real_12);
+	  evaluateAnswers('vies_confirmacao_real_13', 'table', vies_confirmacao_real_13);
+	  evaluateAnswers('vies_confirmacao_real_14', 'table', vies_confirmacao_real_14);
+	  evaluateAnswers('vies_confirmacao_real_15', 'table', vies_confirmacao_real_15);
+    });
+  </script>
+
+</body>
+</html>

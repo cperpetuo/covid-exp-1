@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pesquisa sobre Covid-19</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="questions.js"></script>
+<script src="js/database.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+  
+<body>
+  <div id="content" class="content">
+    
+      <input type="hidden" id="code" name="code" value="generate"/>
+      <input type="hidden" id="next" name="next" value="index8.html"/>
+	  
+	  <!-- div id="success" class="content" style="display: none;">
+		<p>Obrigado por colaborar com a pesquisa. Anote o código abaixo para resgatar o seu prêmio.</p>
+		<p id="codigo"></p>
+		<p>Siga para a <a id='next' href="index2.html?code=">próxima etapa</a></p>
+	  </div -->
+  </div>
+  <div class="center"><button onclick="saveAnswers('vies_confirmacao_7',vies_confirmacao_7)">Próximo</button></div>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+  <script>
+
+    $('document').ready(function() {
+
+      // Your web app's Firebase configuration
+      firebaseConfiguration();
+
+      // Seta o codigo do respondente
+      var url = new URL(window.location.href);
+      var code = url.searchParams.get("code");
+      if(code != null) {
+        $('#code').val(code);
+      }
+
+      var count = 1;
+      $.each( vies_confirmacao_7, function( key, value ) {
+
+        // Pergunta
+        var question = createQuestion(count, key, value);
+        $("#content").append(question);
+
+        // Opcoes de resposta
+        createOptions(question, key, value);
+
+        // Incrementa pergunta
+        count++;
+
+      });
+    });
+  </script>
+
+</body>
+</html>

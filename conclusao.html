@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pesquisa sobre Covid-19</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="questions.js"></script>
+<script src="js/database.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+  
+<body>
+  <div id="content" class="content">
+    
+    <h1>Conclusão</h1>
+    <p></p>
+    
+	<div id="success">
+	  <p>Obrigada por colaborar com a pesquisa. Anote o código abaixo para resgatar o seu prêmio.</p>
+	  <p id="codigo"></p>
+    </div>
+
+  <script>
+
+    $('document').ready(function() {
+      
+      var url = new URL(window.location.href);
+      var code = url.searchParams.get("code");
+	  
+      if(code != null) {
+        $('#codigo').html(code);
+      }
+
+    });
+  </script>
+  
+  </body>
+</html>

@@ -1,0 +1,202 @@
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    line-height: 16pt;
+  }
+  
+  h1, h2 { 
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 16pt;
+	color: #555;
+  }
+  
+  h2 { 
+	margin: 50px 0 -10px 40px;
+	font-size: 12pt;
+	text-align: left;  
+  }
+
+  .content { 
+	background-image: url('../images/feausp.png');
+    background-repeat: no-repeat;
+    background-position: 30px 25px;
+	min-height: 300px;
+
+    margin: 20px auto; 
+    width: 700px; 
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border: 1px solid gray;
+	box-shadow: 5px 5px #BBB;
+  }
+
+  .intro { 
+	margin: 20px auto; 
+	width: 700px; 
+	border: 1px solid gray;
+	padding: 20px;
+	box-shadow: 5px 5px #BBB;
+  }
+
+  .button, button {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	margin-bottom: 10px;
+  }
+
+  .question {
+    border: 0px solid gray;
+    padding: 10px 30px;
+    margin-bottom: 0px;
+    border-bottom: 0px dashed lightgray;
+  }
+
+  .question > div > span {
+    font-size: small;
+    font-weight: bold;
+    width: 70px;
+    word-wrap: break-word;
+  }
+
+  .question > .title {
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+   
+  .question > .description {
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+    
+  .question > img {
+    max-width: 600px;
+    margin: -20px auto 30px auto;
+    display: block;
+  }
+
+  .options {
+    padding-bottom: 50px;
+  }
+  
+  .label-1-7 {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+    margin-bottom: 50px;
+  }
+  
+  .lable-list {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  input[type=radio], input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 5px 0px 5px;
+	cursor: pointer;
+  }
+
+  .code {
+    padding: 20px;
+    text-align: center;
+    display: none;
+  }
+  
+  input[type=text], input.text, input[type=textarea], input.textarea {
+    height: 30px;
+    width: 300px;
+    font-size: 20pt;
+    font-weight: bolder;
+    text-align: center;
+    color: darkgreen;
+  }
+
+  input[type=text].open, input.text.open {
+    height: 30px;
+    width: 400px;
+    font-size: 12pt;
+    font-weight: normal;
+    text-align: left;
+    color: black;
+	margin-bottom: -40px;
+  }
+
+  .center {
+    text-align: center;
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .left {
+    float: left;
+    margin-top: -10px;
+    margin-right: 40px;
+  }
+  
+  .right {
+    margin-top: -10px;
+  	float: right;
+    margin-left: 40px;
+  }
+
+  #success {
+    border: 1px solid green;
+    background-color: #D1EEC6;
+	width: 640px;
+    margin: 20px auto; 
+  }
+
+  #success > p {
+    text-align: center;
+    padding: 20px 60px 10px 60px;
+  }
+
+  #codigo {
+    font-weight: bolder;
+    font-size: 18pt;
+  }
+  
+  .question > img {
+	margin-top: 70px;  	  
+  }
+  
+  table {
+	width: 620px;
+	font-size: 8pt;
+	color: #555;
+	margin-left: 40px;
+	text-align: center;
+    border-collapse: collapse;
+  }
+  
+  td { 
+	min-width: 40px;
+  }
+
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+ }
+
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+ tr:hover {background-color: #ddd;}
+
+ th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #5DADE2;
+   color: white;
+}
