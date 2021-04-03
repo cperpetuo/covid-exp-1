@@ -8,34 +8,56 @@ function evaluateAnswers(reference, element, array) {
   ref.on("value", function(snapshot) {
 	
 	$.each( snapshot.val(), function( user, answers ) {
-	  var total = 0;
+	  var acertou = 0;
+	  var lermaisfake = 0;
+	  var lermaisreal = 0;
 	  var size = array.length;
 	  $.each( answers.respostas, function( key, value ) {
 		var resposta = value.resposta;
 		var category = value.category;
 		if(category == 'ignore')
-			return;
-		if(category == resposta)
-		  total++;
-	  });	 
-      grades = users[user];
-	  if(!grades)
+		  return;
+		if(category == 'lermaisfake') {
+			reference = category;
+			if(resposta == "Sim")
+			  lermaisfake++;
+		}
+		else if(category == 'lermaisreal') {
+			reference = category;
+			if(resposta == "Sim")
+			  lermaisreal++;
+		}
+		else if(category == resposta) {
+		  acertou++;
+		}
+        grades = users[user];
+	    if(!grades)
 		  grades = {};
 	  
-	  if(reference.indexOf("vies_confirmacao_fake") > -1)
+	    if(reference.indexOf("vies_confirmacao_fake") > -1)
 		  reference = "fake";	  
 	  
-	  else if(reference.indexOf("vies_confirmacao_real") > -1)
+	    else if(reference.indexOf("vies_confirmacao_real") > -1)
 		  reference = "real";	  
 	  
-	  if(grades[reference]) {
-		g = grades[reference];
-		grades[reference] += total;
-	  }
-	  else
-		grades[reference] = total;
-	  
-	  users[user] = grades;
+	    if(grades[reference]) {
+		  if(reference == 'lermaisfake')
+		    grades[reference] += lermaisfake;
+		  else if(reference == 'lermaisreal')
+		    grades[reference] += lermaisreal;
+		  else
+		    grades[reference] += acertou;
+	    }
+	    else {
+		  if(reference == 'lermaisfake')
+		    grades[reference] = lermaisfake;
+		  else if(reference == 'lermaisreal')
+		    grades[reference] = lermaisreal;
+		  else
+		    grades[reference] = acertou;
+	    }
+	    users[user] = grades;
+	  });	 
 	});
 	
     updateTable(element, users);
@@ -52,8 +74,10 @@ function updateTable(element, users) {
 	table.innerHTML = "<table id='table'> \
 	  <tr>\
 	    <th>Código</th>\
-	    <th>Fake</th>\
-	    <th>Real</th>\
+	    <th>Fake (acertos)</th>\
+	    <th>Real (acertos)</th>\
+	    <th>Fake (ler mais)</th>\
+	    <th>Real (ler mais)</th>\
 	  <tr>	\
 	</table>";
 	
@@ -62,13 +86,19 @@ function updateTable(element, users) {
 	  var td1 = document.createElement("td");
 	  var td2 = document.createElement("td");
 	  var td3 = document.createElement("td");
+	  var td4 = document.createElement("td");
+	  var td5 = document.createElement("td");
 	  table.appendChild(tr);
 	  tr.appendChild(td1);
 	  tr.appendChild(td2);
 	  tr.appendChild(td3);
+	  tr.appendChild(td4);
+	  tr.appendChild(td5);
 	  td1.appendChild(document.createTextNode(key));
 	  td2.appendChild(document.createTextNode(value["fake"]));
 	  td3.appendChild(document.createTextNode(value["real"]));
+	  td4.appendChild(document.createTextNode(value["lermaisfake"]));
+	  td5.appendChild(document.createTextNode(value["lermaisreal"]));
 	});
 }
 

@@ -14,7 +14,7 @@ var vies_confirmacao_fake_1 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisfake'
 	}
 ];
 
@@ -34,7 +34,7 @@ var vies_confirmacao_fake_2 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisfake'
 	}
 ];
 
@@ -54,7 +54,7 @@ var vies_confirmacao_fake_3 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisfake'
 	}
 ];
 
@@ -74,7 +74,7 @@ var vies_confirmacao_fake_4 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisfake'
 	}
 ];
 
@@ -94,7 +94,7 @@ var vies_confirmacao_fake_5 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisfake'
 	}
 ];
 
@@ -214,7 +214,7 @@ var vies_confirmacao_real_11 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisreal'
 	}
 ];
 
@@ -234,7 +234,7 @@ var vies_confirmacao_real_12 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisreal'
 	}
 ];
 
@@ -254,7 +254,7 @@ var vies_confirmacao_real_13 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisreal'
 	}
 ];
 
@@ -274,7 +274,7 @@ var vies_confirmacao_real_14 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisreal'
 	}
 ];
 
@@ -294,6 +294,6 @@ var vies_confirmacao_real_15 = [
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
-		category: 'ignore'
+		category: 'lermaisreal'
 	}
 ];
