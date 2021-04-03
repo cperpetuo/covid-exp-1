@@ -8,6 +8,8 @@ function evaluateAnswers(reference, element, array) {
   ref.on("value", function(snapshot) {
 	
 	$.each( snapshot.val(), function( user, answers ) {
+	  //if(user == 'AEKLDF6584035') return;
+	  var refaux = reference;
 	  var acertou = 0;
 	  var lermaisfake = 0;
 	  var lermaisreal = 0;
@@ -18,12 +20,12 @@ function evaluateAnswers(reference, element, array) {
 		if(category == 'ignore')
 		  return;
 		if(category == 'lermaisfake') {
-			reference = category;
+			refaux = category;
 			if(resposta == "Sim")
 			  lermaisfake++;
 		}
 		else if(category == 'lermaisreal') {
-			reference = category;
+			refaux = category;
 			if(resposta == "Sim")
 			  lermaisreal++;
 		}
@@ -34,27 +36,27 @@ function evaluateAnswers(reference, element, array) {
 	    if(!grades)
 		  grades = {};
 	  
-	    if(reference.indexOf("vies_confirmacao_fake") > -1)
-		  reference = "fake";	  
+	    if(refaux.indexOf("vies_confirmacao_fake") > -1)
+		  refaux = "fake";	  
 	  
-	    else if(reference.indexOf("vies_confirmacao_real") > -1)
-		  reference = "real";	  
+	    else if(refaux.indexOf("vies_confirmacao_real") > -1)
+		  refaux = "real";	  
 	  
-	    if(grades[reference]) {
-		  if(reference == 'lermaisfake')
-		    grades[reference] += lermaisfake;
-		  else if(reference == 'lermaisreal')
-		    grades[reference] += lermaisreal;
+	    if(grades[refaux]) {
+		  if(refaux == 'lermaisfake')
+		    grades[refaux] += lermaisfake;
+		  else if(refaux == 'lermaisreal')
+		    grades[refaux] += lermaisreal;
 		  else
-		    grades[reference] += acertou;
+		    grades[refaux] += acertou;
 	    }
 	    else {
-		  if(reference == 'lermaisfake')
-		    grades[reference] = lermaisfake;
-		  else if(reference == 'lermaisreal')
-		    grades[reference] = lermaisreal;
+		  if(refaux == 'lermaisfake')
+		    grades[refaux] = lermaisfake;
+		  else if(refaux == 'lermaisreal')
+		    grades[refaux] = lermaisreal;
 		  else
-		    grades[reference] = acertou;
+		    grades[refaux] = acertou;
 	    }
 	    users[user] = grades;
 	  });	 
