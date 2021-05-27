@@ -2,103 +2,103 @@ var vies_confirmacao_fake_1 = [
 	{
 		id: 1001,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Fake - 26 obitos vacina.JPG',	  
 		category: 'Falsa'
 	},
-	{
+	/*{
 		id: 1002,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisfake'
-	}
+	}*/
 ];
 
 var vies_confirmacao_fake_2 = [
 	{
 		id: 1003,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Fake - cloroquina cobaia de vacina.JPG',	  
 		category: 'Falsa'
 	},
-	{
+	/*{
 		id: 1004,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisfake'
-	}
+	}*/
 ];
 
 var vies_confirmacao_fake_3 = [
 	{
 		id: 1005,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Fake - coronavac cancer e suicida.JPG',	  
 		category: 'Falsa'
 	},
-	{
+	/*{
 		id: 1006,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisfake'
-	}
+	}*/
 ];
 
 var vies_confirmacao_fake_4 = [
 	{
 		id: 1007,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Fake - ivermectina.JPG',	  
 		category: 'Falsa'
 	},
-	{
+	/*{
 		id: 1008,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisfake'
-	}
+	}*/
 ];
 
 var vies_confirmacao_fake_5 = [
 	{
 		id: 1009,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Fake - pfeizer yeadon.JPG',	  
 		category: 'Falsa'
 	},
-	{
+	/*{
 		id: 1010,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisfake'
-	}
+	}*/
 ];
 
-var vies_confirmacao_6 = [
+/*var vies_confirmacao_6 = [
 	{
 		id: 1011,
 		
@@ -196,26 +196,26 @@ var vies_confirmacao_10 = [
 		list: ['Sim','Não'],
 		category: 'ignore'
 	}
-];
+];*/
 
 var vies_confirmacao_real_11 = [
 	{
 		id: 1021,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Real - Coronavac - 1.png',	  
 		category: 'Verdadeira'
 	},
-	{
+	/*{
 		id: 1022,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisreal'
-	}
+	}*/
 ];
 
 var vies_confirmacao_real_12 = [
@@ -228,14 +228,14 @@ var vies_confirmacao_real_12 = [
 		image: 'images/Real - Coronavac - 2.png',	  
 		category: 'Verdadeira'
 	},
-	{
+	/*{
 		id: 1024,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisreal'
-	}
+	}*/
 ];
 
 var vies_confirmacao_real_13 = [
@@ -248,14 +248,14 @@ var vies_confirmacao_real_13 = [
 		image: 'images/Real - eficacia pfizer 94.JPG',	  
 		category: 'Verdadeira'
 	},
-	{
+	/*{
 		id: 1026,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisreal'
-	}
+	}*/
 ];
 
 var vies_confirmacao_real_14 = [
@@ -268,14 +268,14 @@ var vies_confirmacao_real_14 = [
 		image: 'images/Real - Fique em casa.JPG',	  
 		category: 'Verdadeira'
 	},
-	{
+	/*{
 		id: 1028,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisreal'
-	}
+	}*/
 ];
 
 var vies_confirmacao_real_15 = [
@@ -288,12 +288,12 @@ var vies_confirmacao_real_15 = [
 		image: 'images/Real - impacto cognitivo.PNG',	  
 		category: 'Verdadeira'
 	},
-	{
+	/*{
 		id: 1030,
 		
 		description: 'Gostaria de ler mais sobre esta mensagem?',
 		options: 'list',
 		list: ['Sim','Não'],
 		category: 'lermaisreal'
-	}
+	}*/
 ];
