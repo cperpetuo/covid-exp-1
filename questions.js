@@ -222,9 +222,9 @@ var vies_confirmacao_real_12 = [
 	{
 		id: 1023,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Real - Coronavac - 2.png',	  
 		category: 'Verdadeira'
 	},
@@ -242,9 +242,9 @@ var vies_confirmacao_real_13 = [
 	{
 		id: 1025,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Real - eficacia pfizer 94.JPG',	  
 		category: 'Verdadeira'
 	},
@@ -262,9 +262,9 @@ var vies_confirmacao_real_14 = [
 	{
 		id: 1027,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Real - Fique em casa.JPG',	  
 		category: 'Verdadeira'
 	},
@@ -282,9 +282,9 @@ var vies_confirmacao_real_15 = [
 	{
 		id: 1029,
 		
-		description: 'A mensagem acima é verdadeira ou falsa?',
+		description: 'Você acredita na mensagem acima?',
 		options: 'list',
-		list: ['Verdadeira','Falsa'],
+		list: ['Sim','Não'],
 		image: 'images/Real - impacto cognitivo.PNG',	  
 		category: 'Verdadeira'
 	},
